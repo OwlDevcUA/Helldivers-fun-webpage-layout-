@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+   
+
+body {
+    background-image: url(Image/Back.png);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    max-width: 2000px;
+    margin: 0 auto;
+    
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    padding: 1px;
+    justify-content: center;
+    
+
+}
+
+.header_img {
+    margin-right: 100px;
+    padding: 13px;
+}
+
+.header_img2 {
+    margin-left: 100px;
+    padding: 13px;
+}
+
+.MoT_banner {
+    color: #e6f3ff;
+    font-family: "Khand", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.MoT_banner h1{
+    padding: 0 30px;
+}
+
+.nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.nav a{
+    color: #e6f3ff;
+    text-decoration: none;
+    margin-inline: 10px;
+    
+}
+
+.login {
+    position: absolute;
+    float: right;
+    margin-left: 93%;
+    padding: 20px;
+    list-style-type: none;
+    color: white;
+    
+}
+
+
+.login a{
+    color: #fff;
+    text-decoration: none;
+    font-family: "Khand", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    
+}
+
+.login a:hover {
+    transition: 0.5s;
+    color: #ffee00;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.box {
+    height: 2000px;
+    width: 1000px;
+    background-color: #1A1A1A;
+    opacity: .9;
+    margin-inline: 350px;
+    padding: 10px;
+    box-shadow: #000000;
+    border: #e6f3ff;
+    position: relative;
+    position: absolute;
+    border-radius: 4px;
+}
+
+.main_img1 {
+    border-radius: 1px;
+    position: absolute;
+    margin-left: 1450px;
+    padding: 50px;
+}
+
+.main_img2 {
+    border-radius: 1px;
+    position: absolute;
+    margin-right: 1450px;
+    padding: 500px;
+    
+}
+
+.slogan {
+    font-family: "Khand", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 20px;
+    color: #fff;
+    position: relative;
+    position: absolute;
+    
+}
+
+.slogan h1 {
+    text-align: center;
+}
+
+.article1 {
+    padding: 70px 0;
+    width: 1000px;
+    height: 1500px;
+    position: relative;
+    position: absolute;
+    color: #fff;
+
+}
+
+.text-1{
+    padding: 30px 30px;
+    width: 100%;
+    font-family: "Khand", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    
+}
+
+.text-2 {
+    width: 100%;
+    padding: 10px 30px;
+    font-family: "Khand", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    
+}
+
+.text-3 {
+    width: 100%;
+    padding: 30px 30px;
+    font-family: "Khand", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.text-4 {
+    width: 100%;
+    padding: 10px 30px;
+    font-family: "Khand", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+}
+
+.enlist {
+    float: right;
+    padding: 0 60px;
+}
+
+
+
+.slider{
+    position: relative;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    padding: 30px 0px;
+}
+.slider img{
+    width: 100%;
+    display: none;
+}
+
+img.displaySlide{
+    display: block;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+.slider button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    padding: 10px 15px;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: ease-out 0.3s;
+    opacity: 0;
+    border-radius: 100%;
+}
+
+.slider:hover button{
+    opacity: 10;
+}
+
+.prev{
+    left: 0;
+}
+.next{
+    right: 0;
+}
+@keyframes fade {
+    from {opacity: .5}
+    to {opacity: 1}
+}
+
+.video {
+    display: block;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.rig {
+    padding: 80px;
+}
+
+.register {
+   display: block;
+   margin: auto;
+   text-align: center;
+   width: 40%;
+   height: 60px;
+   background-color: #990000;
+   color: #fff;
+   border: none;
+   outline: none;
+   border-radius: 40px;
+   font-family: "Khand", sans-serif;
+   font-weight: 400;
+   font-size: 25px;
+    cursor: pointer;
+}
+
+.register:is(:hover, :active){
+    background-color: rgb(51, 0, 0);
+}
+
+footer {
+    display: block;
+    clear: both;
+    background-color: #161616;
+    text-align: center;
+    list-style-type: none;
+    padding: 10px;
+    width: 100%;
+    margin-top: 2000px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.icons a{
+    text-decoration: none;
+    padding: 30px;
+    margin: 10px;
+    
+}
+
+.icons i{
+    color: #ffffff;
+    font-size: 2em;
+}
+
+.icons i:hover{
+    transition: 0.5s;
+    color: #ffee00;
+}
+
+footer h3{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 30px;
+    color: white;
+    font-family: "Khand", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+@media screen and (max-width:600px){
+    body, .header, .box, .slogan, article, footer{
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
